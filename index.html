@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="icon" href="/images/terminal.ico">
+	<title>Usar Localbase</title>
+</head>
+
+<body>
+	<header>
+		<div class="container mt-5">
+			<h1 class="text-center">Lista de empleados</h1>
+		</div>
+	</header>
+
+	<main role="main" class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<form action="javascript:void(0);" id="frmUsuario">
+					<div class="form-row align-items-center">
+						<input type="text" id="id" hidden>
+						<div class="col-sm-3">
+							<label class="sr-only" for="nombre">Nombre</label>
+							<input type="text" class="form-control mb-2" id="nombre" placeholder="Ingrese el nombre">
+						</div>
+						<div class="col-sm-3">
+							<label class="sr-only" for="apellidos">Apellidos</label>
+							<input type="text" class="form-control mb-2" id="apellidos" placeholder="Ingrese el nombre">
+						</div>
+						<div class="col-sm-3">
+							<label class="sr-only" for="usuario">Usuario</label>
+							<input type="text" autocomplete="off" class="form-control mb-2" id="usuario"
+								placeholder="Ingrese el nombre de usuario">
+						</div>
+						<div class="col-sm-3">
+							<button class="btn btn-primary btn-block mb-2" id="boton" onclick="agregar()">Crear Usuario</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-12">
+				<table class="table table-striped table-dark text-center">
+					<thead>
+						<tr>
+							<th scope="col">ID</th>
+							<th scope="col">Nombre</th>
+							<th scope="col">Apellido</th>
+							<th scope="col">Usuario</th>
+							<th scope="col">Acciones</th>
+						</tr>
+					</thead>
+					<tbody id="tabla">
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
